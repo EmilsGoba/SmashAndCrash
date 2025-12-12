@@ -7,8 +7,14 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button class="smash-btn">Smash</button>
-    <button class="crash-btn">Crash</button>
 
+    <div class="button-container">
+        <button class="big-btn smash-btn">Smash</button>
+        <button class="big-btn crash-btn" onclick="launchConfetti()">Crash</button>
+    </div>
+
+    <canvas id="confettiCanvas"></canvas>
+
+    <script src="script.js"></script>
 </body>
 </html>
