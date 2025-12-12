@@ -1,39 +1,48 @@
-/* ====== ĻOTI LIELAS POGAS ====== */
+/* ====== Lielas pogas ar ēnu ====== */
 .big-btn {
-    padding: 35px 60px;
-    font-size: 32px;
+    padding: 50px 80px;       /* ļoti liels padding */
+    font-size: 36px;           /* liels teksts */
     font-weight: bold;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     cursor: pointer;
     transition: 0.2s;
-    width: 100%;
+    width: 100%;               /* vienāda platuma kolonna */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4); /* drop shadow */
 }
 
+/* ====== Smash poga (violeta) ====== */
 .smash-btn {
     background-color: #7a3cff;
     color: white;
 }
+
 .smash-btn:hover {
     background-color: #642fd4;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5); /* lielāka ēna hover */
 }
 
+/* ====== Crash poga (zila) ====== */
 .crash-btn {
     background-color: #007bff;
     color: white;
 }
+
 .crash-btn:hover {
     background-color: #0064cc;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.5);
 }
 
+/* ====== Konteiners pogām ====== */
 .button-container {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
-    width: 400px;
-    margin: 60px auto;
+    flex-direction: column;  /* viena zem otras */
+    gap: 40px;               /* lielāka atstarpe starp pogām */
+    width: 450px;            /* kolonnas platums */
+    margin: 80px auto;       /* centrēšana */
 }
 
+/* ====== Animēts fons ====== */
 body {
     margin: 0;
     height: 100vh;
