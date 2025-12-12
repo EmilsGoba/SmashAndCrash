@@ -12,3 +12,17 @@
   .smash-btn:hover {
     background-color: #642fd4;
   }
+  .crash-btn {
+    background-color: #007bff; /* zils */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.crash-btn:hover {
+    background-color: #0064cc; /* tumšāks zils */
+}
