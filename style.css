@@ -1,28 +1,60 @@
-.smash-btn {
-    background-color: #7a3cff; /* violets */
-    color: white;
+/* ====== ĻOTI LIELAS POGAS ====== */
+.big-btn {
+    padding: 35px 60px;
+    font-size: 32px;
+    font-weight: bold;
     border: none;
-    padding: 12px 24px;
-    font-size: 18px;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
     transition: 0.2s;
-  }
-
-  .smash-btn:hover {
-    background-color: #642fd4;
-  }
-  .crash-btn {
-    background-color: #007bff; /* zils */
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    font-size: 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: 0.2s;
+    width: 100%;
 }
 
+.smash-btn {
+    background-color: #7a3cff;
+    color: white;
+}
+.smash-btn:hover {
+    background-color: #642fd4;
+}
+
+.crash-btn {
+    background-color: #007bff;
+    color: white;
+}
 .crash-btn:hover {
-    background-color: #0064cc; /* tumšāks zils */
+    background-color: #0064cc;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 400px;
+    margin: 60px auto;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, blue, black, purple);
+    background-size: 600% 600%;
+    animation: colorShift 10s ease infinite;
+}
+
+@keyframes colorShift {
+    0%   { background-position: 0% 50%; }
+    33%  { background-position: 50% 50%; }
+    66%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* === Confetti canvas virs visa ekrāna === */
+#confettiCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
